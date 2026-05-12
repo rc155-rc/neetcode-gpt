@@ -18,6 +18,6 @@ class Solution:
             sig_z = 1/(1+np.exp(-z))
             return round(sig_z,5)
         elif activation == "relu":
-            relu = max(0.0,z)
+            relu = np.maximum(0.0,z)
             return round(relu,5)
         
